@@ -1,0 +1,125 @@
+:root {
+  --brand-color: #212121;
+  --first-background: #ffffff;
+  --second-background: #2f303a;
+  --web-color: #2196f3;
+  --contact-color: #757575;
+  --third-background: #f5f4fa;
+  --logo-color: #000000;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--first-background);
+  color: var(--brand-color);
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--logo-color);
+}
+.web {
+  color: var(--web-color);
+}
+.main {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--brand-color);
+  cursor: pointer;
+}
+.main:focus,
+.main:hover {
+  color: var(--web-color);
+}
+.contact:focus,
+.contact:hover {
+  color: var(--web-color);
+}
+.mail:focus,
+.mail:hover {
+  color: var(--first-background);
+}
+.tel:focus,
+.tel:hover {
+  color: var(--first-background);
+}
+.contact {
+  font-weight: 500;
+  text-decoration: none;
+  color: #757575;
+}
+h1 {
+  font-weight: 900;
+  color: var(--first-background);
+}
+.section1 {
+  background-color: #2f303a;
+}
+.button:hover,
+.button:focus {
+  color: var(--first-background);
+  background: #2196f3;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button1 {
+  background: #2196f3;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  color: var(--first-background);
+}
+footer {
+  background: #2f303a;
+  color: var(--first-background);
+}
+.tel {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+.mail {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+address {
+  font-style: normal;
+  font-size: 14px;
+}
+.section4 {
+  background-color: #f5f4fa;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.name {
+  font-weight: 500;
+}
+.position {
+  color: #757575;
+  font-size: 16px;
+}
+.description {
+  color: #757575;
+  font-size: 14px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.studio {
+  color: #ffffff;
+}
+.description2 {
+  color: var(--contact-color);
+  font-size: 14px;
+}
+.name2 {
+  font-weight: 700;
+  font-size: 18px;
+}
