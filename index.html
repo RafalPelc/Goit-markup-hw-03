@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,134 +17,183 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div class="container header-parent">
         <a class="logo" href="./index.html"
           ><span class="web">Web</span>Studio</a
         >
-        <ul>
-          <li><a class="main" href="#Agencja">Agencja</a></li>
-          <li><a class="main" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="main" href="#Kontakt">Kontakt</a></li>
+        <nav class="navig">
+          <ul class="nav-manu">
+            <li>
+              <a class="nav-link" href="#Agencja">Agencja</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact-parent">
+          <li>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a class="contact" href="">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contact" href="">+48 111 111 111</a>
+      </div>
     </header>
     <main>
       <section class="section1">
-        <h1>EFEKTYWNE ROZWIĄZANIE DLA WASZEGO BIZNESU</h1>
-        <button class="button1" type="button">Zamów usługę</button>
+        <div class="container">
+          <h1 class="title">EFEKTYWNE ROZWIĄZANIE DLA WASZEGO BIZNESU</h1>
+          <button class="order-button" type="button">Zamów usługę</button>
+        </div>
       </section>
       <section>
-        <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="card-set">
+            <li class="card">
+              <h3 class="lorem">Lorem ipsum</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="card">
+              <h3 class="lorem">Lorem ipsum</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="card">
+              <h3 class="lorem">Lorem ipsum</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="card">
+              <h3 class="lorem">Lorem ipsum</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
-        <h2 id="Portfolio">Czym się zajmujemy</h2>
-        <img
-          src="./images/box1.jpg"
-          width="200"
-          height="200"
-          alt="Projektowanie układu strony"
-        />
-        <img
-          src="./images/box2.jpg"
-          width="200"
-          height="200"
-          alt="Projektowanie strony tak aby była czytelna w telefonie"
-        />
-        <img
-          src="./images/box3.jpg"
-          width="200"
-          height="200"
-          alt="Projektowanie graficzne wszystkich widoków strony"
-        />
+        <div class="container">
+          <h2 class="what-we-do" id="Portfolio">Czym się zajmujemy</h2>
+          <div class="images">
+            <img
+              src="./Images/box1.jpg"
+              width="370"
+              height="294"
+              alt="Projektowanie układu strony"
+            />
+            <img
+              src="./Images/box2.jpg"
+              width="370"
+              height="294"
+              alt="Projektowanie strony tak aby była czytelna w telefonie"
+            />
+            <img
+              src="./Images/box3.jpg"
+              width="370"
+              height="294"
+              alt="Projektowanie graficzne wszystkich widoków strony"
+            />
+          </div>
+        </div>
       </section>
       <section class="section4">
-        <h2 id="Agencja">Nasz zespół</h2>
-        <img
-          src="./images/team-prod-designer.jpg"
-          width="150"
-          height="150"
-          alt="John Doe"
-        />
-        <p class="name">John Doe</p>
-        <p class="position">Product Designer</p>
-        <img
-          src="./images/team-front-developer.jpg"
-          width="150"
-          height="150"
-          alt="John Doe"
-        />
-        <p class="name">John Doe</p>
-        <p class="position">Frontend Developer</p>
-        <img
-          src="./images/team-marketing.jpg"
-          width="150"
-          height="150"
-          alt="John Doe"
-        />
-        <p class="name">John Doe</p>
-        <p class="position">Marketing</p>
-        <img
-          src="./images/team-ul-designer.jpg"
-          width="150"
-          height="150"
-          alt="John Doe"
-        />
-        <p class="name">John Doe</p>
-        <p class="position">UL Designer</p>
+        <div class="container">
+          <h2 class="team" id="Agencja">Nasz zespół</h2>
+          <ul class="border-team-parent">
+            <li class="border-team">
+              <figure class="team-figure">
+                <img
+                  src="./Images/team-prod-designer.jpg"
+                  width="270"
+                  height="260"
+                  alt="John Doe"
+                />
+                <figcaption class="team-figcaption">
+                  <p class="employee">John Doe</p>
+                  <p class="position">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="border-team">
+              <figure class="team-figure">
+                <img
+                  src="./Images/team-front-developer.jpg"
+                  width="270"
+                  height="260"
+                  alt="John Doe"
+                />
+                <figcaption class="team-figcaption">
+                  <p class="employee">John Doe</p>
+                  <p class="position">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="border-team">
+              <figure class="team-figure">
+                <img
+                  src="./Images/team-marketing.jpg"
+                  width="270"
+                  height="260"
+                  alt="John Doe"
+                />
+                <figcaption class="team-figcaption">
+                  <p class="employee">John Doe</p>
+                  <p class="position">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="border-team">
+              <figure class="team-figure">
+                <img
+                  src="./Images/team-ul-designer.jpg"
+                  width="270"
+                  height="260"
+                  alt="John Doe"
+                />
+                <figcaption class="team-figcaption">
+                  <p class="employee">John Doe</p>
+                  <p class="position">UL Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <h3 class="logo" id="Kontakt">
-        <span class="web">Web</span><span class="studio">Studio</span>
-      </h3>
-      <address>
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <p>
-          <a class="mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </p>
-        <p>
-          <a class="tel" href="tel:+48111111111">tel:+48 111 111 111</a>
-        </p>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <h3 class="logo" id="Kontakt">
+          <span class="web">Web</span><span class="studio-logo">Studio</span>
+        </h3>
+        <address class="street-footer">
+          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+          <p>
+            <a class="contact-footer" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </p>
+          <p>
+            <a class="contact-footer" href="tel:+48111111111"
+              >tel:+48 111 111 111</a
+            >
+          </p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
