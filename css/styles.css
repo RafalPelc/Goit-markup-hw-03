@@ -8,6 +8,7 @@
   --logo-color: #000000;
   --border-header: #ececec;
   --figcaption-portfolio: #eeeeee;
+  --footer-contact: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -105,7 +106,7 @@ body {
   padding: 60px;
 }
 .contact-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact);
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
