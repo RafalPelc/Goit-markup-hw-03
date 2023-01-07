@@ -7,6 +7,7 @@
   --third-background: #f5f4fa;
   --logo-color: #000000;
   --border-header: #ececec;
+  --figcaption-portfolio: #eeeeee;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -56,14 +57,14 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  width: 696px;
   color: var(--first-background);
-  margin: 0px;
-  align-items: center;
-  padding: 200px;
-  padding-bottom: 40px;
 }
 .section1 {
+  display: flex;
   background-color: var(--second-background);
+  height: 600px;
+  align-items: center;
   text-align: center;
 }
 .service-button:hover,
@@ -94,8 +95,9 @@ body {
   color: var(--first-background);
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 41px 10px 42px;
-  margin-bottom: 200px;
+  border: none;
+  width: 200px;
+  height: 50px;
 }
 .footer {
   background: var(--second-background);
@@ -186,21 +188,20 @@ header {
   border-bottom: var(--border-header) 1px solid;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 .header-parent {
   display: flex;
   width: 1200px;
+  height: 80px;
   align-items: center;
-  margin-top: 24px;
-  padding-bottom: 25px;
+
   justify-content: space-between;
 }
 .navig {
   flex-grow: 1;
-  padding-left: 93px;
 }
 
 .nav-manu {
@@ -234,14 +235,12 @@ header {
   list-style: none;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
-  margin-top: 50px;
 }
 .border-team {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background: #ffffff;
+  background: var(--first-background);
 }
 .team-figure {
   width: 270px;
@@ -255,26 +254,26 @@ header {
   list-style: none;
   justify-content: center;
   gap: 8px;
-  margin: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
 }
+
 .portfolio-img {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   padding: 0;
   gap: 30px;
-  margin-top: 0px;
   margin-bottom: 94px;
+  margin-top: 50px;
 }
 .portfolio-figure {
   margin: 0;
 }
 .portfolio-figc {
   padding: 20px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid var(--figcaption-portfolio);
+  border-left: 1px solid var(--figcaption-portfolio);
+  border-bottom: 1px solid var(--figcaption-portfolio);
 }
 img {
   display: block;
