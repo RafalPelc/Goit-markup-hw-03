@@ -124,10 +124,8 @@ body {
 }
 .section4 {
   background-color: var(--third-background);
-  height: 648px;
+
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .employee {
   font-weight: 500;
@@ -230,6 +228,7 @@ header {
 .images {
   display: flex;
   padding-bottom: 94px;
+  justify-content: center;
   gap: 30px;
 }
 .border-team-parent {
@@ -256,6 +255,7 @@ header {
   list-style: none;
   justify-content: center;
   gap: 8px;
+  padding-bottom: 50px;
 }
 
 .portfolio-img {
