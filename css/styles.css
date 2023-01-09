@@ -15,6 +15,10 @@ body {
   background: var(--first-background);
   color: var(--brand-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -122,6 +126,8 @@ body {
   background-color: var(--third-background);
   height: 648px;
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .employee {
   font-weight: 500;
@@ -158,8 +164,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin-top: 20px;
-  margin-bottom: 4px;
   margin-left: 24px;
 }
 .team {
@@ -167,23 +171,19 @@ body {
   font-weight: 700;
   line-height: 1.16;
   text-align: center;
-  padding-top: 94px;
   margin: 0px;
+  padding-bottom: 50px;
 }
 .what-we-do {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 .lorem {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 94px;
-  margin-bottom: 10px;
 }
 header {
   border-bottom: var(--border-header) 1px solid;
@@ -202,19 +202,20 @@ header {
   justify-content: space-between;
 }
 .navig {
+  display: flex;
   flex-grow: 1;
 }
 
 .nav-manu {
   display: flex;
-  width: 254px;
+  gap: 46px;
   justify-content: space-between;
   list-style: none;
 }
 
 .header-contact-parent {
   display: flex;
-  width: 295px;
+  gap: 50px;
   justify-content: space-between;
   list-style: none;
 }
@@ -255,7 +256,6 @@ header {
   list-style: none;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
 }
 
 .portfolio-img {
@@ -264,8 +264,6 @@ header {
   flex-wrap: wrap;
   padding: 0;
   gap: 30px;
-  margin-bottom: 94px;
-  margin-top: 50px;
 }
 .portfolio-figure {
   margin: 0;
